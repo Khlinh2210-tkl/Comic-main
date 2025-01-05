@@ -1,0 +1,102 @@
+/* Container chính của trang AddComic */
+.add-comic-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tiêu đề trang */
+  .add-comic-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* Form nhập liệu */
+  .add-comic-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Các label của form */
+  .add-comic-form label {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  /* Input và textarea */
+  .add-comic-form input,
+  .add-comic-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Textarea có chiều cao lớn hơn */
+  .add-comic-form textarea {
+    min-height: 150px;
+  }
+  
+  /* Thêm hiệu ứng khi input/textarea được focus */
+  .add-comic-form input:focus,
+  .add-comic-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Nút đăng truyện */
+  .add-comic-form button {
+    padding: 12px 20px;
+    font-size: 1.2em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-comic-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .add-comic-form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Thông báo lỗi */
+  .error-message {
+    color: red;
+    font-size: 1.1em;
+    margin-top: 10px;
+  }
+  
+  /* Đảm bảo các input, textarea luôn có chiều rộng đầy đủ */
+  .add-comic-form input,
+  .add-comic-form textarea {
+    width: 100%;
+  }
+  
+  /* Định dạng cho các checkbox (nếu có) */
+  .add-comic-form .checkbox-label {
+    font-size: 1.1em;
+    color: #555;
+  }
+  
+  .add-comic-form .checkbox-input {
+    margin-right: 10px;
+  }

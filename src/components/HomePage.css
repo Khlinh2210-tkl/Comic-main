@@ -1,0 +1,102 @@
+/* Giao diện chính cho danh sách truyện */
+.homepage-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.homepage-title {
+  text-align: center;
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+/* Container chính cho danh sách truyện */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px; /* Khoảng cách giữa các item */
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; /* Độ rộng tối đa của container */
+  margin: 0 auto; /* Căn giữa container và tạo khoảng trống hai bên */
+  padding: 0 20px; /* Thêm padding ở hai bên */
+  box-sizing: border-box;
+}
+
+.comic-item {
+  width: calc(20% - 10px); /* 5 truyện trên 1 hàng (20% mỗi item, trừ gap) */
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.comic-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.comic-item h3 {
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+.comic-item a {
+  color: blue;
+  text-decoration: underline;
+  font-size: 15px;
+  margin-top: 6px;
+  display: block;
+}
+
+/* Phân trang */
+.pagination {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination .active {
+  background-color: #ff7f00; /* Màu nổi bật cho trang hiện tại */
+  color: white;
+}
+
+/* Logout Button */
+.logout-button {
+  padding: 10px 15px;
+  margin: 10px 0;
+  background-color: #dc3545; /* Red color for logout */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
